@@ -671,23 +671,38 @@ main {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  max-width: 25%;
+  width: 100px;
   row-gap: 15px;
   color: var(--navColor);
   text-transform: capitalize;
   position: relative;
+  margin-bottom: 20px;
 }
 
-.about .stats .stats-banner .stats-label .count i {
+.about
+  .stats
+  .stats-banner
+  .stats-label
+  .count
+  i {
   margin-bottom: 10px;
 }
 
-.about .stats .stats-banner .stats-label .count * {
+.about
+  .stats
+  .stats-banner
+  .stats-label
+  .count
+  * {
   position: relative;
   z-index: 2;
 }
 
-.about .stats .stats-banner .stats-label .count::before {
+.about
+  .stats
+  .stats-banner
+  .stats-label
+  .count::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -698,7 +713,11 @@ main {
   transform: rotate(45deg);
 }
 
-.about .stats .stats-banner .stats-label .count::after {
+.about
+  .stats
+  .stats-banner
+  .stats-label
+  .count::after {
   content: "";
   position: absolute;
   width: 25px;
@@ -706,6 +725,16 @@ main {
   background-color: black;
   z-index: 1;
   top: -3px;
+}
+
+.about
+  .stats
+  .stats-banner
+  .stats-label
+  .count
+  .counter-info {
+  text-align: center;
+  font-size: 0.7em;
 }
 
 @media (max-width: 767px) {
@@ -716,11 +745,6 @@ main {
   .counter-info {
     text-align: center;
   }
-}
-
-.about .stats .stats-banner .stats-label .count {
-  max-width: 100%;
-  margin-bottom: 20px;
 }
 
 /* - - - - - */
@@ -814,11 +838,15 @@ main {
     bottom: -30px;
   }
 
-  .skills-level .skill:nth-of-type(2) .skill-bar::after {
+  .skills-level
+    .skill:nth-of-type(2)
+    .skill-bar::after {
     right: 38px !important;
   }
 
-  .skills-level .skill:nth-of-type(3) .skill-bar::after {
+  .skills-level
+    .skill:nth-of-type(3)
+    .skill-bar::after {
     right: 55px !important;
   }
   .skills-level .skill .skill-bar::after {
@@ -918,12 +946,16 @@ main {
   top: -38px;
 }
 
-.skills-level .skill:nth-of-type(2) .skill-bar::after {
+.skills-level
+  .skill:nth-of-type(2)
+  .skill-bar::after {
   right: 53px;
   top: -37px;
   content: "85%";
 }
-.skills-level .skill:nth-of-type(3) .skill-bar::after {
+.skills-level
+  .skill:nth-of-type(3)
+  .skill-bar::after {
   right: 78px;
   top: -37px;
   content: "80%";
@@ -938,13 +970,19 @@ main {
   border-radius: 5px;
 }
 
-.skills-level .skill:nth-of-type(2) .skill-bar::before {
+.skills-level
+  .skill:nth-of-type(2)
+  .skill-bar::before {
   width: 85%;
 }
-.skills-level .skill:nth-of-type(3) .skill-bar::before {
+.skills-level
+  .skill:nth-of-type(3)
+  .skill-bar::before {
   width: 80%;
 }
-.skills-level .skill:nth-of-type(4) .skill-bar::before {
+.skills-level
+  .skill:nth-of-type(4)
+  .skill-bar::before {
   width: 90%;
 }
 
